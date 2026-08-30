@@ -1,0 +1,262 @@
+.section {
+  padding: 0px 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+.verticalTabsContainer {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+}
+.verticalButtons {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  padding: 10px 0;
+  flex-shrink: 0;
+gap: 20px;
+}
+
+.tabButton {
+  background: transparent;
+  padding: 12px 24px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  color: #6c7075;
+  cursor: pointer;
+  transition: all 0.3s ease;
+   background-color: white;
+ border: 0.5px solid #ffd400;
+ border-radius: 15px;
+}
+
+.tabButton:hover {
+  background: black;
+  color: white;
+  border: none;
+}
+
+.tabButton.activeTab {
+background: black;
+  color: white;
+  border: none;
+}
+
+.contentArea {
+  flex: 1;
+  background: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: flex-start;
+  min-height: 400px;
+}
+
+.content1,
+.content2,
+.content3,
+.content4,
+.content5,
+.content6,
+.content7,
+.content8,
+.content9 {
+  width: 100%;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content1 p,
+.content2 p,
+.content3 p,
+.content4 p,
+.content5 p,
+.content6 p,
+.content7 p,
+.content8 p,
+.content9 p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #8b8b8b;
+  margin: 0 0 12px 0;
+}
+
+.content1 p strong,
+.content2 p strong,
+.content3 p strong,
+.content4 p strong,
+.content5 p strong,
+.content6 p strong,
+.content7 p strong,
+.content8 p strong,
+.content9 p strong {
+  color: #5c5e61;
+  font-weight: 600;
+}
+
+.content1 p:last-child,
+.content2 p:last-child,
+.content3 p:last-child,
+.content4 p:last-child,
+.content5 p:last-child,
+.content6 p:last-child,
+.content7 p:last-child,
+.content8 p:last-child,
+.content9 p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .verticalButtons {
+    min-width: 160px;
+  }
+
+  .tabButton {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .contentArea {
+    padding: 30px 35px;
+  }
+
+  .content1 p,
+  .content2 p,
+  .content3 p,
+  .content4 p,
+  .content5 p,
+  .content6 p,
+  .content7 p,
+  .content8 p,
+  .content9 p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 4%;
+  }
+
+  .verticalTabsContainer {
+    flex-direction: column;
+    border-radius: 10px;
+  }
+
+  .verticalButtons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: unset;
+    padding: 8px;
+    gap: 4px;
+    overflow-x: auto;
+  }
+
+  .tabButton {
+    padding: 10px 16px;
+    font-size: 13px;
+    border-left: none;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+    flex: 0 0 auto;
+  }
+
+  .tabButton.activeTab {
+    border-left: none;
+    border-bottom-color: #ffd400;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .contentArea {
+    padding: 25px 25px;
+    min-height: 200px;
+  }
+
+  .content1 p,
+  .content2 p,
+  .content3 p,
+  .content4 p,
+  .content5 p,
+  .content6 p,
+  .content7 p,
+  .content8 p,
+  .content9 p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 30px 3%;
+  }
+
+  .verticalTabsContainer {
+    border-radius: 8px;
+  }
+
+  .verticalButtons {
+    padding: 6px;
+    gap: 3px;
+  }
+
+  .tabButton {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .contentArea {
+    padding: 20px 18px;
+    min-height: 150px;
+  }
+
+  .content1 p,
+  .content2 p,
+  .content3 p,
+  .content4 p,
+  .content5 p,
+  .content6 p,
+  .content7 p,
+  .content8 p,
+  .content9 p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .tabButton {
+    padding: 6px 15px;
+    font-size: 11px;
+  }
+
+  .contentArea {
+    padding: 15px 12px;
+  }
+
+  .content1 p,
+  .content2 p,
+  .content3 p,
+  .content4 p,
+  .content5 p,
+  .content6 p,
+  .content7 p,
+  .content8 p,
+  .content9 p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}

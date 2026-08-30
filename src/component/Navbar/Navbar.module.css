@@ -1,0 +1,255 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #cbc2ba;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 0 0 6px 6px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.menuGroup {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sideButton {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 6px 10px;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sideButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sideButton:active {
+  transform: scale(0.95);
+}
+
+.middleButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.menuIcon {
+  height: 28px;
+  width: auto;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.menuIcon:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #cbc2ba;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+.overlayOpen {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebarWrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  background-color: #cbc2ba;
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform 1s ease;
+  overflow-y: auto;
+  box-shadow: -4px 0 20px #cbc2ba;
+}
+
+.sidebarWrapperOpen {
+  transform: translateX(0);
+}
+
+.sidebarNavbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #cbc2ba;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 0 0 6px 6px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: black;
+  font-size: 32px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+  padding: 4px 8px;
+  line-height: 1;
+  z-index: 20;
+}
+
+.closeButton:hover {
+  transform: rotate(90deg);
+  color: #ffd400;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding: 20px 30px 40px 60px;
+}
+
+.navLink {
+  display: block;
+  padding: 16px 20px;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  width: 19%;
+} 
+.navLink:hover{
+  border:1px solid #ffd400;
+}
+
+body.noScroll {
+  overflow: hidden !important;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 16px;
+  }
+
+  .sideButton {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  .logo {
+    height: 32px;
+  }
+
+  .menuIcon {
+    height: 24px;
+  }
+
+  .sidebarWrapper {
+    max-width: 100%;
+  }
+
+  .sidebarNavbar {
+    padding: 10px 16px;
+  }
+
+  .navLinks {
+    padding: 16px 20px 30px 20px;
+  }
+
+  .navLink {
+    font-size: 18px;
+    padding: 14px 16px;
+  }
+
+  .closeButton {
+    font-size: 28px;
+    top: 16px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 12px;
+  }
+
+  .sideButton {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+
+  .sideButton:first-child {
+    display: none;
+  }
+
+  .logo {
+    height: 28px;
+  }
+
+  .menuIcon {
+    height: 22px;
+  }
+
+  .sidebarWrapper {
+    max-width: 100%;
+  }
+
+  .sidebarNavbar {
+    padding: 8px 12px;
+  }
+
+  .navLinks {
+    padding: 12px 16px 24px 16px;
+  }
+
+  .navLink {
+    font-size: 16px;
+    padding: 12px 14px;
+  }
+
+  .closeButton {
+    font-size: 24px;
+    top: 12px;
+    right: 16px;
+  }
+}

@@ -1,0 +1,190 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 40%;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  color: white;
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.pdfButton {
+  background-color: rgba(70, 70, 70);
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.socialBar {
+  position: absolute;
+  top: 28%;
+  right: 0px;
+  background-color: #f5c518;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 8px;
+  gap: 10px;
+  border-radius: 6px 0 0 6px;
+}
+
+.socialBar a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: -450px;
+  left: 1%;
+  width: 750px;
+  height: auto;
+  animation: floatUp 3s ease-in-out infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-90vh);
+    opacity: 0.1;
+  }
+}
+
+/* ---------- Large tablets / small laptops ---------- */
+@media (max-width: 1200px) {
+  .title {
+    font-size: 4rem;
+  }
+
+  .arrow {
+    width: 600px;
+    bottom: -380px;
+  }
+}
+
+/* ---------- Tablets ---------- */
+@media (max-width: 992px) {
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .overlay {
+    bottom: 35%;
+    left: 12%;
+  }
+
+  .socialBar {
+    top: 32%;
+    padding: 8px 6px;
+    gap: 8px;
+  }
+
+  .socialBar a {
+    font-size: 13px;
+  }
+
+  .arrow {
+    width: 550px;
+    bottom: -350px;
+  }
+}
+
+/* ---------- Your existing breakpoint, kept as-is ---------- */
+@media (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .overlay {
+    bottom: 30%;
+    left: 10%;
+  }
+
+  .arrow {
+    width: 500px;
+    bottom: -300px;
+  }
+}
+
+/* ---------- Small phones ---------- */
+@media (max-width: 480px) {
+  .hero {
+    height: 100svh; /* see note below */
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .overlay {
+    bottom: 25%;
+    left: 8%;
+    gap: 14px;
+  }
+
+  .pdfButton {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  .socialBar {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    flex-direction: row;
+    border-radius: 6px 0 0 0;
+    padding: 6px 8px;
+  }
+
+  .socialBar a {
+    font-size: 12px;
+  }
+
+  .arrow {
+    width: 300px;
+    bottom: -160px;
+    left: -5%;
+  }
+
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-60vh); /* shorter travel on small screens */
+      opacity: 0.1;
+    }
+  }
+}

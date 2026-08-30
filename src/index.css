@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Co Text Trial';
+  src: url('./assets/fonts/co_text-webfont.woff2') format('woff2'),
+       url('./assets/fonts/co_text-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Co Text Trial';
+  src: url('./assets/fonts/co_text_bold-webfont.woff2') format('woff2'),
+       url('./assets/fonts/co_text_bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Co Text Trial';
+  src: url('./assets/fonts/co_text_light-webfont.woff2') format('woff2'),
+       url('./assets/fonts/co_text_light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Co Text Trial', sans-serif;
+}

@@ -186,18 +186,21 @@ margin-top: 25px;
    padding: 40px; 
   box-shadow: -10px 0 30px black;
 }
+
+.slidePanel.slidePanelOpen {
+  transform: translateX(0);
+}
+
 .alpha {
- position: absolute;
- top:5;
+  position: absolute;
+  top: 0;              
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: 1;
+  z-index: 0;        
   object-fit: cover;
   object-position: top;
-}
-.slidePanel.slidePanelOpen {
-  transform: translateX(0);
+  pointer-events: none;  
 }
 
 .closeButton {
@@ -216,7 +219,7 @@ margin-top: 25px;
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
-  
+  z-index: 2;          
 }
 
 .closeButton:hover {

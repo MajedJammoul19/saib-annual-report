@@ -31,6 +31,7 @@ export const translations: Translation[] = [
     en: 'This year\'s theme focuses on driving innovation while maintaining sustainable growth. We are committed to creating long-term value through strategic investments. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repudiandae distinctio in unde itaque non.',
     ar: 'يركز موضوع هذا العام على دفع الابتكار مع الحفاظ على النمو المستدام. نحن ملتزمون بخلق قيمة طويلة الأجل من خلال الاستثمارات الاستراتيجية. لوريم إيبسوم دولور سيت أميت كونسيكتيتور أديبيسيسينغ إيليت. مايوريس ريبوديانداي ديستينكتيو إن أوندي إيتاكي نون.'
   },
+
     { key: 'overviewTitle', en: 'Overview', ar: 'نظرة عامة' },
   { key: 'downloadPDF', en: 'Download PDF', ar: 'تحميل PDF' },
     { key: 'atAGlance', en: 'At a Glance', ar: 'لمحة سريعة' },
@@ -418,4 +419,12 @@ export const translations: Translation[] = [
     en: 'Our commitment to governance excellence is demonstrated through transparent reporting, independent oversight, and active engagement with all stakeholders. We maintain rigorous risk management practices and compliance programs that protect our reputation and ensure sustainable value creation for shareholders and stakeholders alike.', 
     ar: 'يتجسد التزامنا بالتميز في الحوكمة من خلال التقارير الشفافة والرقابة المستقلة والمشاركة النشطة مع جميع أصحاب المصلحة. نحافظ على ممارسات صارمة لإدارة المخاطر وبرامج امتثال تحمي سمعتنا وتضمن خلق قيمة مستدامة للمساهمين وأصحاب المصلحة على حد سواء.' 
   },
+  // Navbar translations
+  { key: 'menu', en: 'Menu', ar: 'القائمة' },
+  { key: 'overview', en: 'Overview', ar: 'نظرة عامة' },
+  { key: 'leadership', en: 'Leadership', ar: 'القيادة' },
+  { key: 'strategicReview', en: 'Strategic Review', ar: 'المراجعة الاستراتيجية' },
+  { key: 'businessReview', en: 'Business Review', ar: 'مراجعة الأعمال' },
+  { key: 'sustainabilityReview', en: 'Sustainability Review', ar: 'مراجعة الاستدامة' },
+  { key: 'financialStatements', en: 'Financial Statements', ar: 'البيانات المالية' },
 ];

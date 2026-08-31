@@ -6,6 +6,7 @@ import download from './images/download.png'
 import { useNavigate } from 'react-router-dom'
 import { useLanguageStore } from '../../store/useLanguageStore'
 import { useTranslation } from '../../translations/useTranslation'
+
 const Navbar = () => {
   const navigate = useNavigate()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -30,19 +31,19 @@ const Navbar = () => {
   }, [isMenuOpen])
 
   const { language, toggleLanguage } = useLanguageStore()
-const { t } = useTranslation()
+  const { t } = useTranslation()
 
   return (
     <>
       <div className={styles.navbar}>
         <div className={styles.menuGroup}>
-         <button className={styles.sideButton} onClick={toggleLanguage}>
-  {language === 'en' ? 'Arabic' : 'English'}
-</button>
+          <button className={styles.sideButton} onClick={toggleLanguage}>
+            {t('arabicButton')}
+          </button>
           <img src={download} alt="Download" className={styles.menuIcon} onClick={toggleLanguage} />
         </div>
 
-        <button onClick={()=>{navigate('/annualreports')}} className={styles.middleButton}>
+        <button onClick={() => { navigate('/annualreports') }} className={styles.middleButton}>
           <img src={logo} alt="Logo" className={styles.logo} />
         </button>
 
@@ -53,34 +54,34 @@ const { t } = useTranslation()
             </button>
           ) : (
             <>
-              <img 
-                src={menu} 
-                alt="Menu" 
-                className={styles.menuIcon} 
+              <img
+                src={menu}
+                alt="Menu"
+                className={styles.menuIcon}
                 onClick={toggleMenu}
               />
-              <button 
-                className={styles.sideButton} 
+              <button
+                className={styles.sideButton}
                 onClick={toggleMenu}
               >
-                Menu
+                {t('menu')}
               </button>
             </>
           )}
         </div>
       </div>
 
-      <div 
+      <div
         className={`${styles.overlay} ${isMenuOpen ? styles.overlayOpen : ''}`}
         onClick={closeMenu}
       >
-        <div 
+        <div
           className={`${styles.sidebarWrapper} ${isMenuOpen ? styles.sidebarWrapperOpen : ''}`}
           onClick={(e) => e.stopPropagation()}
         >
           <div className={styles.sidebarNavbar}>
             <div className={styles.menuGroup}>
-              <button className={styles.sideButton}>Arabic</button>
+              <button className={styles.sideButton}>{t('arabicButton')}</button>
               <img src={download} alt="Download" className={styles.menuIcon} />
             </div>
 
@@ -96,23 +97,23 @@ const { t } = useTranslation()
           </div>
 
           <nav className={styles.navLinks}>
-            <a  onClick={()=>{navigate('/')}} className={styles.navLink}>
-              Overview
+            <a onClick={() => { navigate('/') }} className={styles.navLink}>
+              {t('overview')}
             </a>
-            <a  onClick={()=>{navigate('/Leader-ship')}} className={styles.navLink}>
-              Leadership
+            <a onClick={() => { navigate('/Leader-ship') }} className={styles.navLink}>
+              {t('leadership')}
             </a>
-            <a  onClick={()=>{navigate('/strategic-review')}} className={styles.navLink}>
-              Strategic Review
+            <a onClick={() => { navigate('/strategic-review') }} className={styles.navLink}>
+              {t('strategicReview')}
             </a>
-            <a  onClick={()=>{navigate('/business-review')}} className={styles.navLink}>
-              Business Review
+            <a onClick={() => { navigate('/business-review') }} className={styles.navLink}>
+              {t('businessReview')}
             </a>
-            <a  onClick={()=>{navigate('/sustanability-review')}} className={styles.navLink}>
-              Sustainability Review
+            <a onClick={() => { navigate('/sustanability-review') }} className={styles.navLink}>
+              {t('sustainabilityReview')}
             </a>
-            <a  onClick={()=>{navigate('/financial-statements')}} className={styles.navLink}>
-              Financial Statements
+            <a onClick={() => { navigate('/financial-statements') }} className={styles.navLink}>
+              {t('financialStatements')}
             </a>
           </nav>
         </div>

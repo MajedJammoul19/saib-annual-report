@@ -89,8 +89,8 @@ margin-left: 8%;
 
 .missionWrapper {
   position: relative;
-    flex: 0 0 auto; /* don't flex */
-  width: 90%; /* or specific width */
+    flex: 0 0 auto; 
+  width: 90%; 
   padding-left: 4px;
   margin-left: -10%;
 }
@@ -259,11 +259,43 @@ flex-shrink: 0;
 }
 
 /* ---------- Responsive ---------- */
-
 @media (max-width: 900px) {
+  .FrameHeader {
+    padding: 32px 5% 16px;
+  }
+
+  .FrameContent {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .container {
+    padding: 10px 4% 32px;
+  }
+
   .row {
     flex-direction: column;
     gap: 12px;
+  }
+
+  .visionheaders,
+  .missionheaders {
+    margin-top: 0;
+  }
+
+  .visionBox {
+    min-height: 160px;
+  }
+
+  .visionText {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+
+  .missionWrapper {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
   }
 
   .sideLabels {
@@ -279,6 +311,7 @@ flex-shrink: 0;
 
   .pillarsRow {
     flex-direction: column;
+    gap: 40px;
   }
 
   .connectorDot {
@@ -287,5 +320,47 @@ flex-shrink: 0;
 
   .headers {
     width: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .FrameContent h2 {
+    font-size: 22px;
+  }
+
+  .FrameContent p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .missionBox {
+    padding: 14px 20px;
+  }
+
+  .pillarCard {
+    padding: 22px 16px 26px;
+  }
+
+  .pillarHeader h4 {
+    font-size: 16px;
+  }
+
+  .pillarList li {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .FrameHeader {
+    padding: 24px 5% 12px;
+  }
+
+  .visionText {
+    font-size: 13px;
+  }
+
+  .sideLabels {
+    flex-wrap: wrap;
+    gap: 12px;
   }
 }

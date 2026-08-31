@@ -239,8 +239,9 @@ background: black;
 
 @media (max-width: 400px) {
   .tabButton {
-    padding: 6px 15px;
+    padding: 6px 5px;
     font-size: 11px;
+    margin: 3px;
   }
 
   .contentArea {

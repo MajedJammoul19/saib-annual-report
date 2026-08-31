@@ -16,6 +16,7 @@ const { t, language } = useTranslation()
   return (
     <div className={styles.container}>
       <Navbar />
+      <div className={styles.heroWrapper}>
       <img src={image} className={styles.heroImage} alt="Sustainability" />
       <div className={styles.overlay}>
         <h1 className={styles.title}>{t('sustainabilityTitle')}</h1>
@@ -30,6 +31,7 @@ const { t, language } = useTranslation()
         <a href="#" aria-label="X (Twitter)"><FaTwitter /></a>
         <a href="#" aria-label="YouTube"><FaYoutube /></a>
         <a href="#" aria-label="Global/Website"><FaGlobe /></a>
+      </div>
       </div>
       <section className={styles.sustainabilitySection}>
         <div className={styles.sustainabilityCard}>

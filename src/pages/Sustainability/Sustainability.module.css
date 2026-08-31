@@ -1,6 +1,23 @@
 :global(body) {
   background-color: #ffffff !important;
 }
+
+.heroWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Vector {
+  position: absolute;   /* was: fixed */
+  bottom: -450px;
+  left: 1%;
+  width: 750px;
+  height: auto;
+  animation: floatUp 3s ease-in-out infinite;
+  z-index: 0;
+}
 .heroImage {
   width: 100vw;
   height: 100vh;
@@ -27,15 +44,7 @@
   text-align: left;
 }
 
-.Vector {
-  position: fixed;  
-  bottom: -450px;
-  left: 1%;
-  width: 750px;
-  height: auto;
-  animation: floatUp 3s ease-in-out infinite;
-  z-index: 0; 
-}
+
 
 @keyframes floatUp {
   0% {
@@ -82,10 +91,7 @@
   align-items: center;
   border-radius: 20px;
   padding: 0px 10px;
-
 }
-
-
 
 .sustainabilityCard:nth-child(even) {
   flex-direction: row-reverse;
@@ -99,25 +105,236 @@
   font-size: 25px;
   font-weight: 700;
   color: #4e5153;
-  margin: 0; 
+  margin: 0;
   position: relative;
-  padding-bottom: 5px;  
+  padding-bottom: 5px;
 }
 
 .sustainabilityCardContent p {
   font-size: 13px;
   font-weight: 400;
   color: #6e6d6d;
-  margin-top: 0; 
-  margin-bottom: 0; 
-  line-height: 1.4;  
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.4;
 }
 
 .headersection {
   font-size: 25px;
   font-weight: 700;
   color: #4e5153;
-  margin: 0; 
+  margin: 0;
   position: relative;
-  padding-bottom: 5px;  
+  padding-bottom: 5px;
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .overlay {
+    bottom: 20%;
+    left: 5%;
+    right: 35%;
+  }
+
+  .title {
+    font-size: clamp(1.8rem, 4vw, 3.5rem);
+  }
+
+  .Vector {
+    width: 500px;
+    bottom: -300px;
+  }
+
+  .socialBar {
+    top: 25%;
+    padding: 8px 6px;
+    gap: 8px;
+  }
+
+  .socialBar a {
+    font-size: 13px;
+  }
+
+  .sustainabilitySection {
+    padding: 60px 5%;
+  }
+
+  .sustainabilityCard {
+    padding: 0px 5px;
+  }
+
+  .sustainabilityCardContent h2 {
+    font-size: 22px;
+  }
+
+  .sustainabilityCardContent p {
+    font-size: 12px;
+  }
+
+  .headersection {
+    font-size: 22px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .heroImage {
+    height: 60vh;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 15%;
+    left: 6%;
+    right: 10%;
+    gap: 12px;
+  }
+
+  .title {
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
+  }
+
+  .Vector {
+    width: 300px;
+    bottom: -200px;
+    left: 0%;
+    animation: floatUpMobile 4s ease-in-out infinite;
+  }
+
+  @keyframes floatUpMobile {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-70vh);
+      opacity: 0.1;
+    }
+  }
+
+  .socialBar {
+    top: 20%;
+    right: 0px;
+    padding: 6px 4px;
+    gap: 6px;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .socialBar a {
+    font-size: 11px;
+  }
+
+  .sustainabilitySection {
+    padding: 40px 4%;
+    gap: 8px;
+  }
+
+  .sustainabilityCard {
+    flex-direction: column !important;
+    padding: 0px;
+    gap: 4px;
+  }
+
+  .sustainabilityCard:nth-child(even) {
+    flex-direction: column !important;
+  }
+
+  .sustainabilityCardContent {
+    flex: 1;
+    width: 100%;
+  }
+
+  .sustainabilityCardContent h2 {
+    font-size: 18px;
+    padding-bottom: 3px;
+  }
+
+  .sustainabilityCardContent p {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .headersection {
+    font-size: 18px;
+    padding-bottom: 3px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .heroImage {
+    height: 50vh;
+  }
+
+  .overlay {
+    bottom: 12%;
+    left: 5%;
+    right: 5%;
+    gap: 8px;
+  }
+
+  .title {
+    font-size: clamp(1.2rem, 5vw, 1.8rem);
+  }
+
+  .Vector {
+    width: 200px;
+    bottom: -150px;
+  }
+
+  .socialBar {
+    top: 15%;
+    padding: 4px 3px;
+    gap: 4px;
+  }
+
+  .socialBar a {
+    font-size: 9px;
+  }
+
+  .sustainabilitySection {
+    padding: 30px 3%;
+    gap: 6px;
+  }
+
+  .sustainabilityCardContent h2 {
+    font-size: 16px;
+  }
+
+  .sustainabilityCardContent p {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+  .headersection {
+    font-size: 16px;
+  }
+}
+
+/* Landscape mobile phones */
+@media (max-width: 768px) and (orientation: landscape) {
+  .heroImage {
+    height: 100vh;
+  }
+
+  .overlay {
+    bottom: 20%;
+    left: 5%;
+    right: 30%;
+  }
+
+  .title {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+  }
+
+  .socialBar {
+    top: 25%;
+  }
+
+  .Vector {
+    width: 250px;
+    bottom: -180px;
+  }
 }

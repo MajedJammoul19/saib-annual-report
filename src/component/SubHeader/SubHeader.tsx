@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './subHeader.module.css'
-import { useTranslation } from '../../translations/useTranslation'
+import { useTranslation } from '../../translations/useTranslation.js'
 
 const SubHeader = () => {
   const { t, language } = useTranslation()

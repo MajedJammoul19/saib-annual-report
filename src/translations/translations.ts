@@ -102,8 +102,105 @@ export const translations: Translation[] = [
     en: 'Our Sustainability Priorities, Categories and Definitions', 
     ar: 'أولويات الاستدامة والفئات والتعريفات' 
   },
-  
-  // SusFramework translations
+  // SusPerformance translations
+  { 
+    key: 'sustainabilityPerformance', 
+    en: 'Our Sustainability Performance', 
+    ar: 'أداؤنا في الاستدامة' 
+  },
+  { 
+    key: 'environmentalPerformance', 
+    en: 'Environmental Performance', 
+    ar: 'الأداء البيئي' 
+  },
+  { 
+    key: 'socialPerformance', 
+    en: 'Social Performance', 
+    ar: 'الأداء الاجتماعي' 
+  },
+  { 
+    key: 'governancePerformance', 
+    en: 'Governance Performance', 
+    ar: 'أداء الحوكمة' 
+  },
+  { 
+    key: 'energyWaterConsumption', 
+    en: 'Energy and water consumption', 
+    ar: 'استهلاك الطاقة والمياه' 
+  },
+  { 
+    key: 'sainEnvironmental', 
+    en: 'SAIN ENVIRONMENTAL MANAGEMENT SYSTEM', 
+    ar: 'نظام إدارة البيئة SAIN' 
+  },
+  { 
+    key: 'socialInitiatives', 
+    en: 'Social Initiatives', 
+    ar: 'المبادرات الاجتماعية' 
+  },
+  { 
+    key: 'saibSaudization', 
+    en: 'SAIB Saudization Rate', 
+    ar: 'معدل السعودة في سايب' 
+  },
+  { 
+    key: 'saudi', 
+    en: 'Saudi', 
+    ar: 'سعودي' 
+  },
+  { 
+    key: 'nonSaudi', 
+    en: 'Non-Saudi', 
+    ar: 'غير سعودي' 
+  },
+  // highlits
+  { 
+    key: 'financialHighlights', 
+    en: 'Financial Highlights', 
+    ar: 'أبرز المؤشرات المالية' 
+  },
+  { 
+    key: 'totalAssets', 
+    en: 'Total assets', 
+    ar: 'إجمالي الأصول' 
+  },
+  { 
+    key: 'totalEquity', 
+    en: 'Total equity', 
+    ar: 'إجمالي حقوق الملكية' 
+  },
+  { 
+    key: 'totalInvestmentPortfolio', 
+    en: 'Total investment portfolio', 
+    ar: 'إجمالي محفظة الاستثمار' 
+  },
+  { 
+    key: 'netIncome', 
+    en: 'Net income', 
+    ar: 'صافي الدخل' 
+  },
+  { 
+    key: 'totalIncome', 
+    en: 'Total income', 
+    ar: 'إجمالي الدخل' 
+  },
+  { 
+    key: 'returnOnEquity', 
+    en: 'Return on Equity (ROE)', 
+    ar: 'العائد على حقوق الملكية (ROE)' 
+  },
+  // 
+   // SusFramework translations
+  { 
+    key: 'sustainabilityApproachTitle', 
+    en: 'Our Sustainability Approach', 
+    ar: 'نهجنا في الاستدامة' 
+  },
+  { 
+    key: 'sustainabilityApproachDescFramework', 
+    en: 'Our sustainability framework integrates environmental stewardship, social responsibility, and governance excellence across all operations. We are committed to embedding sustainable practices that drive long-term value creation while addressing the evolving needs of our stakeholders and contributing to national development priorities.', 
+    ar: 'يدمج إطار الاستدامة لدينا الرعاية البيئية والمسؤولية الاجتماعية والتميز في الحوكمة عبر جميع العمليات. نحن ملتزمون بإدماج الممارسات المستدامة التي تدفع خلق القيمة طويلة الأجل مع تلبية الاحتياجات المتطورة لأصحاب المصلحة والمساهمة في أولويات التنمية الوطنية.' 
+  },
   { 
     key: 'vision', 
     en: 'Vision', 
@@ -207,9 +304,24 @@ export const translations: Translation[] = [
     ar: 'أداء الحوكمة' 
   },
   { 
+    key: 'environmentalDesc1', 
+    en: 'Our environmental performance reflects our commitment to reducing carbon emissions and optimizing resource efficiency across all operations. We continuously monitor and improve our environmental impact through sustainable practices and innovative technologies.', 
+    ar: 'يعكس أداؤنا البيئي التزامنا بتقليل انبعاثات الكربون وتحسين كفاءة الموارد عبر جميع العمليات. نقوم باستمرار بمراقبة وتحسين تأثيرنا البيئي من خلال الممارسات المستدامة والتقنيات المبتكرة.' 
+  },
+  { 
+    key: 'environmentalDesc2', 
+    en: 'We have implemented comprehensive environmental management systems that track energy consumption, waste reduction, and water conservation. These initiatives align with global sustainability standards and support our long-term goal of achieving net-zero emissions.', 
+    ar: 'لقد قمنا بتطبيق أنظمة إدارة بيئية شاملة تتتبع استهلاك الطاقة وتقليل النفايات والحفاظ على المياه. تتوافق هذه المبادرات مع معايير الاستدامة العالمية وتدعم هدفنا طويل الأجل لتحقيق صافي انبعاثات صفري.' 
+  },
+  { 
     key: 'energyWaterConsumption', 
     en: 'Energy and water consumption', 
     ar: 'استهلاك الطاقة والمياه' 
+  },
+  { 
+    key: 'energyWaterDesc', 
+    en: 'Our energy and water management strategy focuses on efficiency and conservation across all facilities. We have invested in smart metering systems and renewable energy sources to reduce our environmental footprint. Regular audits and performance reviews ensure we meet our reduction targets while maintaining operational excellence. Employee training programs promote awareness and encourage sustainable practices throughout the organization.', 
+    ar: 'تركز استراتيجية إدارة الطاقة والمياه لدينا على الكفاءة والحفاظ على الموارد عبر جميع المرافق. لقد استثمرنا في أنظمة القياس الذكية ومصادر الطاقة المتجددة لتقليل بصمتنا البيئية. تضمن المراجعات الدورية ومراجعات الأداء تحقيق أهداف التخفيض مع الحفاظ على التميز التشغيلي. تعزز برامج تدريب الموظفين الوعي وتشجع الممارسات المستدامة في جميع أنحاء المنظمة.' 
   },
   { 
     key: 'sainEnvironmental', 
@@ -217,9 +329,64 @@ export const translations: Translation[] = [
     ar: 'نظام إدارة البيئة SAIN' 
   },
   { 
+    key: 'sainDesc', 
+    en: 'Our SAIN Environmental Management System provides a structured framework for identifying, monitoring, and improving environmental performance. This system ensures compliance with regulatory requirements while driving continuous improvement through regular assessments and stakeholder engagement.', 
+    ar: 'يوفر نظام إدارة البيئة SAIN إطارًا منظمًا لتحديد ومراقبة وتحسين الأداء البيئي. يضمن هذا النظام الامتثال للمتطلبات التنظيمية مع دفع التحسين المستمر من خلال التقييمات المنتظمة وإشراك أصحاب المصلحة.' 
+  },
+  { 
+    key: 'bullet1', 
+    en: 'Regular environmental impact assessments', 
+    ar: 'تقييمات الأثر البيئي المنتظمة' 
+  },
+  { 
+    key: 'bullet2', 
+    en: 'Comprehensive waste management protocols', 
+    ar: 'بروتوكولات إدارة النفايات الشاملة' 
+  },
+  { 
+    key: 'bullet3', 
+    en: 'Energy efficiency improvement programs', 
+    ar: 'برامج تحسين كفاءة الطاقة' 
+  },
+  { 
+    key: 'bullet4', 
+    en: 'Water conservation and recycling initiatives', 
+    ar: 'مبادرات الحفاظ على المياه وإعادة التدوير' 
+  },
+  { 
+    key: 'bullet5', 
+    en: 'Carbon footprint reduction strategies', 
+    ar: 'استراتيجيات تقليل البصمة الكربونية' 
+  },
+  { 
+    key: 'bullet6', 
+    en: 'Sustainable procurement guidelines', 
+    ar: 'إرشادات المشتريات المستدامة' 
+  },
+  { 
     key: 'socialInitiatives', 
     en: 'Social Initiatives', 
     ar: 'المبادرات الاجتماعية' 
+  },
+  { 
+    key: 'socialDesc1', 
+    en: 'Our social initiatives focus on creating positive impact in the communities we serve. We invest in education, healthcare, and economic development programs that empower individuals and foster sustainable growth. Through strategic partnerships, we address social challenges and promote inclusive development opportunities.', 
+    ar: 'تركز مبادراتنا الاجتماعية على خلق تأثير إيجابي في المجتمعات التي نخدمها. نستثمر في برامج التعليم والرعاية الصحية والتنمية الاقتصادية التي تمكّن الأفراد وتعزز النمو المستدام. من خلال الشراكات الاستراتيجية، نعالج التحديات الاجتماعية ونعزز فرص التنمية الشاملة.' 
+  },
+  { 
+    key: 'socialDesc2', 
+    en: 'Community engagement is at the heart of our social responsibility strategy. We collaborate with local organizations to identify and address priority needs, ensuring our initiatives deliver meaningful and lasting impact. Employee volunteer programs further strengthen our community connections.', 
+    ar: 'تعد المشاركة المجتمعية جوهر استراتيجية مسؤوليتنا الاجتماعية. نتعاون مع المنظمات المحلية لتحديد ومعالجة الاحتياجات ذات الأولوية، مما يضمن أن مبادراتنا تحقق تأثيرًا ملموسًا ودائمًا. تعزز برامج تطوع الموظفين روابطنا المجتمعية.' 
+  },
+  { 
+    key: 'socialDesc3', 
+    en: 'Our commitment to social development extends to economic empowerment through SME support, skills development, and entrepreneurship programs. These initiatives create sustainable livelihoods and contribute to the overall economic growth of the regions we operate in.', 
+    ar: 'يمتد التزامنا بالتنمية الاجتماعية إلى التمكين الاقتصادي من خلال دعم المؤسسات الصغيرة والمتوسطة وتطوير المهارات وبرامج ريادة الأعمال. تخلق هذه المبادرات سبل عيش مستدامة وتساهم في النمو الاقتصادي الشامل للمناطق التي نعمل فيها.' 
+  },
+  { 
+    key: 'socialDesc4', 
+    en: 'Employee wellbeing and professional development remain key priorities. We provide continuous learning opportunities, health and wellness programs, and an inclusive work environment that supports personal growth and work-life balance.', 
+    ar: 'تظل رفاهية الموظفين والتطوير المهني من الأولويات الرئيسية. نوفر فرص التعلم المستمر وبرامج الصحة والعافية وبيئة عمل شاملة تدعم النمو الشخصي والتوازن بين العمل والحياة.' 
   },
   { 
     key: 'saibSaudization', 
@@ -235,5 +402,20 @@ export const translations: Translation[] = [
     key: 'nonSaudi', 
     en: 'Non-Saudi', 
     ar: 'غير سعودي' 
+  },
+  { 
+    key: 'governanceDesc1', 
+    en: 'Our governance framework ensures transparency, accountability, and ethical decision-making across all levels of the organization. We maintain robust internal controls and compliance mechanisms that safeguard stakeholder interests and uphold corporate integrity.', 
+    ar: 'يضمن إطار الحوكمة لدينا الشفافية والمساءلة واتخاذ القرارات الأخلاقية على جميع مستويات المنظمة. نحافظ على ضوابط داخلية قوية وآليات امتثال تحمي مصالح أصحاب المصلحة وتدعم نزاهة الشركة.' 
+  },
+  { 
+    key: 'governanceDesc2', 
+    en: 'Board oversight and regular reporting ensure alignment with regulatory requirements and industry best practices. We continuously enhance our governance structure to address emerging risks and opportunities while maintaining the highest standards of corporate conduct.', 
+    ar: 'تضمن رقابة مجلس الإدارة والتقارير المنتظمة التوافق مع المتطلبات التنظيمية وأفضل الممارسات الصناعية. نعمل باستمرار على تعزيز هيكل الحوكمة لدينا لمعالجة المخاطر والفرص الناشئة مع الحفاظ على أعلى معايير السلوك المؤسسي.' 
+  },
+  { 
+    key: 'governanceDesc3', 
+    en: 'Our commitment to governance excellence is demonstrated through transparent reporting, independent oversight, and active engagement with all stakeholders. We maintain rigorous risk management practices and compliance programs that protect our reputation and ensure sustainable value creation for shareholders and stakeholders alike.', 
+    ar: 'يتجسد التزامنا بالتميز في الحوكمة من خلال التقارير الشفافة والرقابة المستقلة والمشاركة النشطة مع جميع أصحاب المصلحة. نحافظ على ممارسات صارمة لإدارة المخاطر وبرامج امتثال تحمي سمعتنا وتضمن خلق قيمة مستدامة للمساهمين وأصحاب المصلحة على حد سواء.' 
   },
 ];

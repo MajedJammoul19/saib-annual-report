@@ -1,14 +1,14 @@
 import React from 'react'
 import slider from './images/slider.png'
 import styles from './Slider.module.css'
-import { useTranslation } from '../../translations/useTranslation' // Adjust import path
+import { useTranslation } from '../../translations/useTranslation.js' 
 
 const Slider = () => {
   const { t, language } = useTranslation()
   const isArabic = language === 'ar'
 
   return (
-    <div className={styles.container} dir={isArabic ? 'rtl' : 'ltr'}>
+    <div className={styles.container} >
       <h2 className={styles.title}>{t('awardsTitle')}</h2>
       <div className={styles.tickerWrapper}>
         <div className={styles.tickerTrack}>

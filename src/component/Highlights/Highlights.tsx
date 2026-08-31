@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import { useCountUp } from 'react-countup'
 import styles from './Highlights.module.css'
+import { useTranslation } from '../../translations/useTranslation' 
 
 const Counter = ({
   end,
@@ -25,17 +26,19 @@ const Counter = ({
 }
 
 const Highlights = () => {
+  const { t } = useTranslation()
+
   return (
     <section className={styles.financialHighlights}>
 
       <header className={styles.highlightsHeader}>
-        <h2>Financial Highlights</h2>
+        <h2>{t('financialHighlights')}</h2>
       </header>
 
       <div className={styles.metricsGrid}>
 
         <article className={styles.metricCard}>
-          <h3 className={styles.metricTitle}>Total assets</h3>
+          <h3 className={styles.metricTitle}>{t('totalAssets')}</h3>
           <div className={styles.metricValue}>
             ₦ <Counter end={173} style={{ color: '#ffd400' }} /><span>bn</span>
           </div>
@@ -43,7 +46,7 @@ const Highlights = () => {
         </article>
 
         <article className={styles.metricCard}>
-          <h3 className={styles.metricTitle}>Total equity</h3>
+          <h3 className={styles.metricTitle}>{t('totalEquity')}</h3>
           <div className={styles.metricValue}>
             ₦ <Counter end={22.43} decimals={2} /> bn
           </div>
@@ -51,7 +54,7 @@ const Highlights = () => {
         </article>
 
         <article className={styles.metricCard}>
-          <h3 className={styles.metricTitle}>Total investment portfolio</h3>
+          <h3 className={styles.metricTitle}>{t('totalInvestmentPortfolio')}</h3>
           <div className={styles.metricValue}>
             ₦ <Counter end={47.2} decimals={1} /> bn
           </div>
@@ -59,7 +62,7 @@ const Highlights = () => {
         </article>
 
         <article className={styles.metricCard}>
-          <h3 className={styles.metricTitle}>Net income</h3>
+          <h3 className={styles.metricTitle}>{t('netIncome')}</h3>
           <div className={styles.metricValue}>
             ₦ <Counter end={2431} separator="," /> MN
           </div>
@@ -67,7 +70,7 @@ const Highlights = () => {
         </article>
 
         <article className={styles.metricCard}>
-          <h3 className={styles.metricTitle}>Total income</h3>
+          <h3 className={styles.metricTitle}>{t('totalIncome')}</h3>
           <div className={styles.metricValue}>
             $ <Counter end={4794} separator="," /> MN
           </div>
@@ -75,7 +78,7 @@ const Highlights = () => {
         </article>
 
         <article className={styles.metricCard}>
-          <h3 className={styles.metricTitle}>Return on Equity (ROE)</h3>
+          <h3 className={styles.metricTitle}>{t('returnOnEquity')}</h3>
           <div className={styles.metricValue}>
             <Counter end={14.76} decimals={2} /> %
           </div>

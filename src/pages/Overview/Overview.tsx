@@ -1,15 +1,15 @@
 import React from 'react'
-import Navbar from '../../component/Navbar/Navbar'
+import Navbar from '../../component/Navbar/Navbar.js'
 import overview from './images/overview.jpg'
 import styles from './OverView.module.css'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube, FaGlobe } from 'react-icons/fa'
 import { SiSnapchat } from 'react-icons/si'
 import arrow from './images/Vector.png'
-import SubHeader from '../../component/SubHeader/SubHeader'
-import Slider from '../../component/Slider/Slider'
-import Certificate from '../../component/Certificate/Certificate'
-import Highlights from '../../component/Highlights/Highlights'
-import { useTranslation } from '../../translations/useTranslation' // Adjust import path
+import SubHeader from '../../component/SubHeader/SubHeader.js'
+import Slider from '../../component/Slider/Slider.js'
+import Certificate from '../../component/Certificate/Certificate.js'
+import Highlights from '../../component/Highlights/Highlights.js'
+import { useTranslation } from '../../translations/useTranslation.js'
 
 const Overview = () => {
   const { t, language } = useTranslation()

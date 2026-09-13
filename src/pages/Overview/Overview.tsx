@@ -10,7 +10,7 @@ import Slider from '../../component/Slider/Slider.js'
 import Certificate from '../../component/Certificate/Certificate.js'
 import Highlights from '../../component/Highlights/Highlights.js'
 import { useTranslation } from '../../translations/useTranslation.js'
-
+import Victors from '../../component/Victors/Victors.js'
 const Overview = () => {
   const { t, language } = useTranslation()
   const isArabic = language === 'ar'
@@ -39,11 +39,13 @@ const Overview = () => {
           <a href="#" aria-label="Global/Website"><FaGlobe /></a>
         </div>
       </div>
+        
       
       <SubHeader />
       <Slider />
       <Certificate />
       <Highlights />
+      <Victors/>
     </div>
   )
 }
